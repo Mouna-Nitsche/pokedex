@@ -1,0 +1,14 @@
+.card_header_style {
+    display: flex;
+    gap: 16px;
+}
+
+.poke-img {
+    height: 80px;
+    width: 90px;
+}
+
+#card_footer {
+    height: 40px;
+    /* background-color: rgb(11, 11, 211); */
+}
