@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pokedex</title>
 </head>
-<body onload="fetchDataJson()">
+<body onload="getPokemon()">
     <h2>Pokedex catch em all</h2>
+    <button onclick="getPokemon(loadMore=true)">load more</button>
     <div id="content">
     </div>
 </body>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 <script src="template.js"></script>
 </html>
