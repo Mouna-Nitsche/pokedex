@@ -1,14 +1,13 @@
-function generateSinglePokemon(firstPokemonName, pokeImg, pokeId, noType, type, type1, i, myPokedex) {
+function generateSinglePokemon(pokemon, types) {
     return `
                 <div class="single_pokemon_card">
                     <div id="card_header" class="card_header_style">                
-                        <p># ${myPokedex[i].id}</p>
-                        <p>${firstPokemonName}</p>
+                        <p># ${pokemon.id}</p>
+                        <p>${pokemon.name}</p>
                     </div>
-                    <img src=${pokeImg} alt="Pic of pokemon" class="poke-img">
+                    <img src=${pokemon.sprites.other.dream_world.front_default} alt="Pic of pokemon" class="poke-img">
                     <div id="card_footer">
-                        <p>${noType}, ${type}, ${type1}</p>
-                        <p>"hallo"</p>
+                        <p>${types}</p>
                     </div>
                     <div id="allData">
 
