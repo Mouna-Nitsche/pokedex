@@ -51,23 +51,25 @@ async function getPokemon(loadMore = false) {
 function GetPokeType(pokemon) {
 
     //Variable defined without a value to avoid definition errors
-    let type1;
-    let type;
-    let noType;
+    typeResult = [];
+    noType = ("This Pokemon has no type");
 
-    if (pokemon.types.length === 2) {
+    if (pokemon.types.length >= 1) {
         //type, denn im Template nutzen.
-        type1 = pokemon.types[1].type.name;
-    } else if (pokemon.types.length === 1) {
-        type = pokemon.types[0].type.name;
-    } else if (pokemon.types.length === 0) {
-        noType = ("This Pokemon has no type");
+        typeResult.push(pokemon.types[0].type.name)
     }
 
 
-    // typeResult = []; kein pushen mehr
-    // console.log(typeResult)
+    if (pokemon.types.length === 2) {
+        typeResult.push(pokemon.types[1].type.name)
+    }
 
-    // return typeResult
+    if (typeResult.length === 0) {
+        typeResult.push(noType)
+    }
+    return typeResult
 
 }
+
+// console.log(typeResult)
+
