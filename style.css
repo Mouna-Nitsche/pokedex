@@ -1,3 +1,48 @@
+body {
+    background-color: #0f0c43;
+    color: white;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.search_input {
+    display: flex;
+    justify-content: end;
+    margin-right: 16px;
+}
+
+.pokemon_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+
+.single_pokemon_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    margin: 16px;
+    border: solid 1px black;
+    border-radius: 8px;
+
+    background-color: #164b7a;
+    color: white;
+}
+
 .card_header_style {
     display: flex;
     gap: 16px;
@@ -11,4 +56,14 @@
 #card_footer {
     height: 40px;
     /* background-color: rgb(11, 11, 211); */
+}
+
+.load_More {
+    margin-left: 16px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+dialog {
+    width: 50%;
 }
