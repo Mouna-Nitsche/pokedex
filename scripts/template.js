@@ -14,11 +14,24 @@ function generateSinglePokemon(pokemon, types) {
                     <div id="card_footer">
                         ${types}
                     </div>
-                    <div id="allData">
-
-                    </div>
                 </div>
             `;
 
 }
 
+
+function generateDetailView(pokemon, types) {
+    return `
+                <div id="dialog_wrapper" onclick="clickOutsidePokeCard(event)">
+                    <button onclick="closeDialog()"> X </button>
+                    <p>
+                        Pokemon Dialog Placeholder
+                        Hier stehen Infos zum Pokemon.
+                    </p>
+                    <p>${pokemon.name}</p>
+                    <div id="types_card_footer">
+                        ${types}
+                    </div>
+                </div>
+        `;
+}

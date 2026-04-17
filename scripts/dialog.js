@@ -2,12 +2,10 @@ function openDialog() {
     document.getElementById("pokeDialog").showModal();
 }
 
-function clickOutsidePokeCard(event) {
-    if (event.target === bigViewDialog) {
-        event.stopPropagation();
-        bigViewDialog.close();
-    }
+function closeDialog() {
+    document.getElementById("pokeDialog").close();
 }
 
-const bigViewDialog = document.querySelector("dialog");
-bigViewDialog.addEventListener("click", clickOutsidePokeCard);
+function stopClosing(event) {
+    event.stopPropagation();
+}

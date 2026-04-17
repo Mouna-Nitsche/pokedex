@@ -48,6 +48,8 @@ async function getPokemon(loadMore = false) {
             const types = GetPokeType(pokemon)
 
             document.getElementById("content").innerHTML += generateSinglePokemon(pokemon, types)
+            // document.getElementById("pokeDialog").innerHTML += generateBigView(pokemon, types)
+
         }
 
     } catch (error) {
@@ -76,3 +78,9 @@ function GetPokeType(pokemon) {
     }
     return typeResult
 }
+
+
+// function renderBigView() {
+//     document.getElementById("content").innerHTML += generateBigView(pokemon, types)
+
+// }

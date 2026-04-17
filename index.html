@@ -20,13 +20,14 @@
       <div id="content" class="pokemon_content">
         </div>
     </div>
-    <dialog id="pokeDialog">
-        <div id="dialog_wrapper" onclick="clickOutsidePokeCard(event)">
-            <p>
-                Pokemon Dialog Placeholder
-                Hier stehen Infos zum Pokemon.
-            </p>
-        </div>
+    <dialog id="pokeDialog" onclick="closeDialog()">
+            <div id="dialog_wrapper" onclick="stopClosing(event)">
+                <button onclick="closeDialog()"> X </button>
+                <p>
+                    Pokemon Dialog Placeholder
+                    Hier stehen Infos zum Pokemon.
+                </p>
+            </div>
     </dialog>
     <button onclick="getPokemon(loadMore=true)" class="pointer load_More">load more</button>
 </body>
